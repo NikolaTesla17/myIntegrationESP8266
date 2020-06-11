@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>nayanCard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <div class="page-wrap">
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html" class="active"><span class="icon fa-home"></span></a></li>
+                <li><a href="generic.html"><span class="icon fa-wifi"></span></a></li>
+            </ul>
+        </nav>
+        <section id="main">
+            <header id="header">
+                <div>Dictionary Attack</div>
+            </header>
+            <section>
+                <div class="inner">
+                    <header>
+                        <h1>Dictionary Attack</h1>
+                    </header>
+                    <p>This tool starts automaticly, first trying 100 of the most commen passwords avalible, then, if
+                        necessary, opens a serial connection over com at a rate of 115200 in which you can set up a
+                        simple python program to send strings(one every 20 seconds) in order to send a longer list.</p>
+                    <div> </div>
+                    <p id="progressDict"></p>
+
+                    SSIDs avalible: <br>
+                    1 The Lan of Milk an Honey <br>
+                    2 FBI Surveillance Van <br>
+                    3 Panic at the Cisco <br>
+                    4 RIP Net Nutrality <br>
+                    5 For whom the Belkin Tolls <br>
+                    6 One if by Lan <br>
+
+                    <br>
+                    <br>
+
+                    <br> To see progress open a  serial port on at a rate of 115200 to this device, the attack locks up the wifi antenna so the webpage is no longer usable
+                    To stop this process, press the reset button on the device or unplug it from power and plug it back in
+                    Once connected , the device will create a network with the name nayanCard has found the password, connect there and go to 192.168.4.1/password to see the saved password,
+                    The odds of success are only about 40 or so percent with this attack so if it is taking too long(around 50 minutes with the onboard list) the device will stop the attack and declare it a failure unless a serial connection is started and more passwords are entered
+
+
+                    </p><br>
+                    <form action="/get"> Enter SSID Number Here: <input type="text" name="ssidInput" value=""><input
+                            type="submit" value="Submit"> </form><br>
+                </div>
+            </section>
+            <footer id="footer" class="copyright"> &copy; Nayan Smuek</a>
+    </div>
+    </footer>
+    </section>
+    </div>
+</body>
+
+</html>
